@@ -33,16 +33,16 @@ print("Encrypted:", encrypted)
 # Decrypt message
 decrypted = cipher.decrypt(encrypted)
 print("Decrypted:", decrypted.decode())
-
+```
 Sample Output:
 Encrypted: b'gAAAAABk...'
 Decrypted: My secret message;
-
+```
 ##<img width="2735" height="1719" alt="Screenshot 2026-03-10 224426" src="https://github.com/user-attachments/assets/426fe73c-4ab9-4328-9d51-05ce0f04c714" />
 
 ##Asymmetric Encryption (RSA)
 #Code Snippet:
-
+```
 from cryptography.hazmat.primitives import serialization, hashes
 from cryptography.hazmat.primitives.asymmetric import rsa, padding
 
@@ -72,10 +72,11 @@ decrypted = private_key.decrypt(
     )
 )
 print("Decrypted:", decrypted.decode())
+```
 ##Sample Output:
-Encrypted: b'\x12\xab...'
+```Encrypted: b'\x12\xab...'
 Decrypted: Secret message;
-
+```
 ##<img width="2704" height="1723" alt="Screenshot 2026-03-10 231508" src="https://github.com/user-attachments/assets/7562dc8f-c233-41f0-9ebb-336a6170ec23" />
 
 ##Steps Followed
